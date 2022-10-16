@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'SkyfallMC Docs',
   tagline: 'SkyfallMC Documentation',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'docs.skyfallmc.ga',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
