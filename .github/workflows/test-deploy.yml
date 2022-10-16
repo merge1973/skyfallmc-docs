@@ -1,4 +1,4 @@
-name: Test Deployment
+name: test-deployment
 
 on:
   pull_request:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   test-deploy:
-    name: Test Deployment
+    name: test-deploy
     runs-on: ubuntu-latest
     strategy:
         matrix:
