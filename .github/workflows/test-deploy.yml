@@ -1,22 +1,13 @@
-name: gh-pages
+name: Test Deployment
 
 on:
-  push:
+  pull_request:
     branches:
       - main
 
-# Allow one concurrent deployment
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
-
-env:
-  # Hosted GitHub runners have 7 GB of memory available, let's use 6 GB
-  NODE_OPTIONS: --max-old-space-size=6144
-
 jobs:
-  deploy:
-    name: Deploy to GitHub Pages
+  test-deploy:
+    name: Test Deployment
     runs-on: ubuntu-latest
     strategy:
         matrix:
@@ -35,10 +26,3 @@ jobs:
         run: npm ci
       - name: Build
         run: npm run build
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
-          force_orphan: true
