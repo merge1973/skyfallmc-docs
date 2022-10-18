@@ -7,6 +7,15 @@ on:
     branches-ignore:
       - main
 
+# Allow one concurrent deployment
+concurrency:
+  group: "gh-pages-test"
+  cancel-in-progress: true
+
+env:
+  # Hosted GitHub runners have 7 GB of memory available, let's use 6 GB
+  NODE_OPTIONS: --max-old-space-size=6144
+
 jobs:
   test-deploy:
     name: test-deploy
