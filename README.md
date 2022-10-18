@@ -4,6 +4,8 @@
 
 This repository contains documentation for the [SkyfallMC](https://play.skyfallmc.ga/) Minecraft server. Visit the documentation [here](https://docs.skyfallmc.ga/).
 
+⚠️ This documentation is still a WIP, bugs are likely to occur! Report any bugs found.
+
 Want to contribute? [Open a pull request](https://github.com/merge1973/skyfallmc-docs/pulls).
 
 ## Credits
