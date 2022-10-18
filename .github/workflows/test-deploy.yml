@@ -1,9 +1,6 @@
 name: test-deployment
 
 on:
-  pull_request:
-    branches:
-      - main
   push:
     branches:
       - dev
