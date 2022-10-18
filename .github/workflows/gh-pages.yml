@@ -3,9 +3,7 @@ name: gh-pages
 on:
   push:
     branches:
-      - main
-    branches-ignore:
-      - dev
+      - origin main
 
 # Allow one concurrent deployment
 concurrency:

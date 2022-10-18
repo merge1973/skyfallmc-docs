@@ -3,7 +3,7 @@ name: test-deployment
 on:
   push:
     branches:
-      - dev
+      - origin dev
 
 # Allow one concurrent deployment
 concurrency:
