@@ -6,5 +6,5 @@ This repository contains documentation for the [SkyfallMC](https://play.skyfallm
 
 Want to contribute? [Open a pull request](https://github.com/merge1973/skyfallmc-docs/pulls).
 
-# Credits
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator. 
+## Credits
+This website is built using Docusaurus v2, a modern static website generator made by Meta. Find more info [here](https://docusaurus.io/).
