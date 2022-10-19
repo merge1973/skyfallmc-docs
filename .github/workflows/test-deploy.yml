@@ -34,4 +34,14 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Build
+        id: build
         run: npm run build
+      
+      - name: Deploy to production - remove test build
+        uses: JesseTG/rm@v1.0.3
+        if: steps.build.outcome == 'success'
+        with:
+          path: /home/runner/work/skyfallmc-docs
+
+      - name: Deploy to production - TEST
+        run: echo "test"
