@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'SkyfallMC Docs',
-  tagline: 'SkyfallMC Documentation',
+  title: 'SkyfallMC Documentation',
+  tagline: 'Documentation for everything SkyfallMC.',
   url: 'https://docs.skyfallmc.ga',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -59,10 +59,10 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: 'SkyfallMC Docs',
         logo: {
-          alt: 'My Site Logo',
           src: 'img/logo.svg',
+          srcDark: 'img/logodark.svg',
         },
         items: [
           {
@@ -73,7 +73,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/merge1973/skyfallmc-docs',
             label: 'GitHub',
             position: 'right',
           },
@@ -92,37 +92,45 @@ const config = {
             ],
           },
           {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
-          },
-          {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'Main Page',
+                href: 'https://play.skyfallmc.ga/',
+              },              
+              {
+                label: 'Discord',
+                href: 'https://discord.gg/hWzRrDz9kR',
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/merge1973/skyfallmc-docs',
+              },
+            ],
+          },          
+          {
+            title: 'Other Pages',
+            items: [
+              {
+                label: 'Files Website',
+                href: 'https://files.skyfallmc.ga/',
+              },
+              {
+                label: 'Server Maps',
+                href: 'https://map.skyfallmc.ga/',
+              },
+              {
+                label: 'Server Statistics',
+                href: 'https://stats.skyfallmc.ga/',
+              },
+              {
+                label: 'Server Status',
+                href: 'https://status.skyfallmc.ga/',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} SkyfallMC. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
