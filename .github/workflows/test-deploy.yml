@@ -44,4 +44,6 @@ jobs:
         run: |
           git config --global user.name 'merge1973'
           git config --global user.email 'merge1973@users.noreply.github.com'
-          git push origin dev:main
+          git fetch main
+          git merge main
+          git push dev:main
