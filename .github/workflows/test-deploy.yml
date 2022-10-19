@@ -36,12 +36,11 @@ jobs:
       - name: Build
         id: build
         run: npm run build
-      
-      - name: Deploy to production - remove test build
-        uses: JesseTG/rm@v1.0.3
-        if: steps.build.outcome == 'success'
-        with:
-          path: /home/runner/work/skyfallmc-docs
+
+      - name: Deploy to production - Checkout repository again
+        uses: actions/checkout@v3
 
       - name: Deploy to production - TEST
-        run: echo "test"
+        run: |
+          git fetch origin main
+          git merge main
