@@ -42,5 +42,6 @@ jobs:
 
       - name: Deploy to production - TEST
         run: |
-          git fetch origin/main
-          git merge main
+          git config --global user.name 'merge1973'
+          git config --global user.email 'merge1973@users.noreply.github.com'
+          git push origin dev:main
