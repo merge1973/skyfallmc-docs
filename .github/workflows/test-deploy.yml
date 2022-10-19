@@ -42,5 +42,5 @@ jobs:
 
       - name: Deploy to production - TEST
         run: |
-          git fetch origin main
+          git fetch origin/main
           git merge main
