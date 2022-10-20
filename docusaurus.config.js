@@ -80,7 +80,11 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            to: '/blog', 
+            label: 'Blog', 
+            position: 'left',
+          },
           {
             href: 'https://discord.gg/hWzRrDz9kR',
             className: 'header-icon-link header-discord-link',
