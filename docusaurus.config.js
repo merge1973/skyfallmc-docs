@@ -61,7 +61,7 @@ const config = {
       announcementBar: {
         id: 'welcome',
         content:
-          'Welcome to SkyfallMC\'s new documentation! Keep in mind that the website is still a WORK IN PROGRESS, report any bugs you find.',
+          'Welcome to SkyfallMC\'s new documentation! ⚠️ Keep in mind that the website is still a work in progress, report any bugs you find. ⚠️',
         backgroundColor: '#fafbfc',
         textColor: '#091E42',
         isCloseable: true,
