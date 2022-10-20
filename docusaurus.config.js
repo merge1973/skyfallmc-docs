@@ -58,11 +58,20 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      announcementBar: {
+        id: 'welcome',
+        content:
+          'Welcome to SkyfallMC\'s new documentation! Keep in mind that the website is still a WORK IN PROGRESS, report any bugs you find.',
+        backgroundColor: '#fafbfc',
+        textColor: '#091E42',
+        isCloseable: false,
+      },
       navbar: {
         title: 'SkyfallMC Docs',
         logo: {
           src: 'img/logo.svg',
           srcDark: 'img/logodark.svg',
+          alt: 'SkyfallMC Logo',
         },
         items: [
           {
@@ -74,7 +83,7 @@ const config = {
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/merge1973/skyfallmc-docs',
-            label: 'GitHub',
+            className: 'header-icon-link header-github-link',
             position: 'right',
           },
         ],
@@ -91,23 +100,6 @@ const config = {
               },
             ],
           },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Main Page',
-                href: 'https://play.skyfallmc.ga/',
-              },              
-              {
-                label: 'Discord',
-                href: 'https://discord.gg/hWzRrDz9kR',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/merge1973/skyfallmc-docs',
-              },
-            ],
-          },          
           {
             title: 'Other Pages',
             items: [
@@ -128,7 +120,24 @@ const config = {
                 href: 'https://status.skyfallmc.ga/',
               },
             ],
-          },
+          },          
+          {
+            title: 'More',
+            items: [
+              {
+                label: 'Main Page',
+                href: 'https://play.skyfallmc.ga/',
+              },              
+              {
+                label: 'Discord',
+                href: 'https://discord.gg/hWzRrDz9kR',
+              },
+              {
+                label: 'GitHub',
+                href: 'https://github.com/merge1973/skyfallmc-docs',
+              },
+            ],
+          },          
         ],
         copyright: `Copyright © ${new Date().getFullYear()} SkyfallMC. Built with Docusaurus.`,
       },
