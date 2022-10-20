@@ -9,7 +9,7 @@ function HomepageHeader() {
   return (
     <header className={clsx(styles.heroBanner)}>
       <div className="container">
-        <img src="@site/static/img/logo.svg"></img>
+        <svg src="img/logo.svg"></svg>
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
       </div>
