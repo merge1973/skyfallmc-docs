@@ -12,7 +12,7 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.svg',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -64,7 +64,7 @@ const config = {
           'Welcome to SkyfallMC\'s new documentation! Keep in mind that the website is still a WORK IN PROGRESS, report any bugs you find.',
         backgroundColor: '#fafbfc',
         textColor: '#091E42',
-        isCloseable: false,
+        isCloseable: true,
       },
       navbar: {
         title: 'SkyfallMC Docs',
@@ -81,6 +81,11 @@ const config = {
             label: 'Tutorial',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            href: 'https://discord.gg/hWzRrDz9kR',
+            className: 'header-icon-link header-discord-link',
+            position: 'right',
+          },
           {
             href: 'https://github.com/merge1973/skyfallmc-docs',
             className: 'header-icon-link header-github-link',

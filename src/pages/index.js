@@ -9,6 +9,7 @@ function HomepageHeader() {
   return (
     <header className={clsx(styles.heroBanner)}>
       <div className="container">
+        <img src="@site/static/img/logo.svg"></img>
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
       </div>
@@ -20,9 +21,9 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Home | ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
+      title={`Home`}
+      description="Documentation for the SkyfallMC Minecraft Server">
+      <HomepageHeader />    
     </Layout>
   );
 }
