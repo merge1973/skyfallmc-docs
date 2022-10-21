@@ -58,27 +58,26 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      announcementBar: {
-        id: 'welcome',
-        content:
-          'Welcome to SkyfallMC\'s new documentation! ⚠️ Keep in mind that the website is still a work in progress, report any bugs you find. ⚠️',
-        backgroundColor: '#fafbfc',
-        textColor: '#091E42',
-        isCloseable: true,
+      colorMode: {
+        defaultMode: 'dark',
+      },
+      docs: {
+        sidebar: {
+          hideable: true,
+        },
       },
       navbar: {
-        title: 'SkyfallMC Docs',
         logo: {
           src: 'img/logo.svg',
           srcDark: 'img/logodark.svg',
-          alt: 'SkyfallMC Logo',
+          alt: 'SkyfallMC Docs',
         },
-        items: [
+        items: [ 
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'welcome',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Docs',
           },
           {
             to: '/blog', 
@@ -99,6 +98,13 @@ const config = {
       },
       footer: {
         style: 'dark',
+        logo: {
+          href: '/',
+          src: 'img/logo.svg',
+          srcDark: 'img/logodark.svg',
+          alt: 'SkyfallMC Docs',
+          height: '36px',
+        },
         links: [
           {
             title: 'Docs',
