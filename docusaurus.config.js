@@ -95,8 +95,7 @@ const config = {
         style: 'dark',
         logo: {
           href: '/',
-          src: 'img/logo.svg',
-          srcDark: 'img/logodark.svg',
+          src: 'img/logodark.svg',
           alt: 'SkyfallMC Docs',
           height: '36px',
         },
