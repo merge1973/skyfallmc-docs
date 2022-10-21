@@ -1,6 +1,6 @@
 ---
+id: docs
 slug: /
-id: welcome
 sidebar_position: 1
 title: SkyfallMC
 tags: 
