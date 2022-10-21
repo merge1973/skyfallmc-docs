@@ -16,8 +16,25 @@
   }
 }
 
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.button {
+  background-color: var(--ifm-button-background-color);
+  border: var(--ifm-button-border-width) solid #2160fd;
+  border-radius: var(--ifm-button-border-radius);
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: var(--ifm-button-font-weight);
+  line-height: 1.5;
+  padding: calc( var(--ifm-button-padding-vertical) * var(--ifm-button-size-multiplier) ) calc( var(--ifm-button-padding-horizontal) * var(--ifm-button-size-multiplier) );
+  text-align: center;
+  -webkit-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  transition-property: color, background, border-color;
+  transition-duration: var(--ifm-button-transition-duration);
+  transition-timing-function: var(--ifm-transition-timing-default);
+  --ifm-button-background-color: #2160fd;
+  --ifm-button-border-color: var(--ifm-color-secondary);  
 }

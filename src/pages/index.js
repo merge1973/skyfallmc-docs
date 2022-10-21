@@ -11,6 +11,7 @@ function HomepageHeader() {
       <div className="container">
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <a href="/docs"><button className={clsx(styles.button)}>View the Docs →</button></a>
       </div>
     </header>
   );
@@ -22,7 +23,7 @@ export default function Home() {
     <Layout
       title={`Home`}
       description="Documentation for the SkyfallMC Minecraft Server">
-      <HomepageHeader />    
+      <HomepageHeader />
     </Layout>
   );
 }
