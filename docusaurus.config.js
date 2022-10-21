@@ -41,16 +41,16 @@ const config = {
           editUrl:
             'https://github.com/merge1973/skyfallmc-docs/tree/main/',
         },
-        blog: {
-          showReadingTime: true,
+        blog: false//{
+          //showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/merge1973/skyfallmc-docs/tree/main/',
-        },
-        theme: {
-          customCss: require.resolve('./src/css/custom.css'),
-        },
+          //editUrl:
+            //'https://github.com/merge1973/skyfallmc-docs/tree/main/',
+        //},
+        //theme: {
+          //customCss: require.resolve('./src/css/custom.css'),
+        //},
       }),
     ],
   ],
@@ -78,11 +78,6 @@ const config = {
             docId: 'docs',
             position: 'left',
             label: 'Docs',
-          },
-          {
-            to: '/blog', 
-            label: 'Blog', 
-            position: 'left',
           },
           {
             href: 'https://discord.gg/hWzRrDz9kR',
