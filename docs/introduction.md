@@ -2,12 +2,8 @@
 id: docs
 slug: /
 sidebar_position: 1
-title: SkyfallMC
+title: Welcome to the SkyfallMC Docs
 description: SkyfallMC is a Minecraft Server running on Minecraft Java & Bedrock Edition.
-tags: 
-  - skyfallmc
-  - welcome
-  - docs
 ---
 
 # Welcome to the SkyfallMC Docs
