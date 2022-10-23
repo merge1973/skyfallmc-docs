@@ -12,7 +12,7 @@ function HomepageHeader() {
     <header className={clsx(styles.heroBanner)}>
       <div className="container">
       <ThemedImage
-        alt="Docusaurus themed image"
+        alt="Logo"
         width="50%"
         sources={{
           light: useBaseUrl('/img/logo.svg'),
