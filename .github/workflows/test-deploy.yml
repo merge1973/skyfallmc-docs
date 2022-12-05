@@ -41,3 +41,14 @@ jobs:
       - name: Build
         id: build
         run: yarn build
+
+  deploy-to-main:
+    name: deploy-to-main
+    runs-on: ubuntu-latest
+      - name: Merge dev -> main
+        id: merge
+        uses: devmasx/merge-branch@master
+        with:
+          type: now
+          target_branch: main
+          github_token: ${{ github.token }}
