@@ -24,15 +24,20 @@ jobs:
           # https://nodejs.org/en/about/releases/
     steps:
       - name: Checkout repository
+        id: checkout
         uses: actions/checkout@v3
+
       - name: Set up Node.js ${{ matrix.node-version }}
+        id: node
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'yarn'
 
       - name: Install dependencies
+        id: install
         run: yarn install --frozen-lockfile
+
       - name: Build
         id: build
         run: yarn build
