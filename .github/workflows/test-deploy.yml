@@ -45,6 +45,7 @@ jobs:
   deploy-to-main:
     name: deploy-to-main
     runs-on: ubuntu-latest
+    steps:
       - name: Merge dev -> main
         id: merge
         uses: devmasx/merge-branch@master
