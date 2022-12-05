@@ -46,10 +46,15 @@ jobs:
     name: deploy-to-main
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
       - name: Merge dev -> main
         id: merge
-        uses: devmasx/merge-branch@master
+        uses: everlytic/branch-merge@1.1.2
+        if: ${{ github.event.workflow_run.conclusion == 'success' }}
         with:
-          type: now
+          commit_message_template: '[Automated] Merged {source_ref} into target {target_branch}'
           target_branch: main
           github_token: ${{ github.token }}
+          source_ref: ${{ github.ref }}
